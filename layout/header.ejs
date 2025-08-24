@@ -1,0 +1,100 @@
+<nav class="navbar bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="d-flex align-item-center me-auto">
+      <!-- logo -->
+      <a class="navbar-brand p-0 me-7" href="index">
+        <img src="/assets/images/logo.png" alt="logo">
+      </a>
+      <!-- navbar-lg-search -->
+      <form action="" class="position-relative d-none d-lg-block">
+        <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"> search </span>
+        <input 
+          type="search" 
+          class="form-control round-1 py-2 ps-10 navbar-lg-search" 
+          id="navbar-lg-search" 
+          placeholder="搜尋景點、地點或城市"
+        >
+      </form>
+    </div>
+    <div class="position-absolute z-1 start-0 end-0 px-4 bg-white">
+      <!-- navbar-search -->
+      <div class="collapse" id="navbar-search">
+        <div class="d-flex align-item-center">
+          <form action="" class="position-relative w-100">
+            <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"> search </span>
+            <input 
+              type="search" 
+              class="form-control round-1 py-2 ps-10" 
+              id="exampleFormControlInput1" 
+              placeholder="搜尋景點、地點或城市"
+            >
+          </form>
+          <button 
+            class="btn p-2 border-0" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbar-search"
+            >
+            <span class="material-icons-outlined"> close </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button type="button"  
+      class="btn p-2 border-0 d-lg-none" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbar-search"
+      >
+      <span class="material-icons-outlined align-bottom"> search </span>
+    </button>
+    <a href="#" class="btn py-2 border-0">
+      <span class="position-relative">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert p-0 cart-tag">
+          2
+        </span>
+        <span class="material-icons-outlined align-bottom"> shopping_cart </span>
+      </span>
+    </a>
+    <button 
+      class="btn border-0 p-2" 
+      type="button" 
+      data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasNavbar" 
+      aria-controls="offcanvasNavbar" 
+      aria-label="Toggle navigation">
+      <span class="material-icons-outlined align-bottom"> menu </span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
